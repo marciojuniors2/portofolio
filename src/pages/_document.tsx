@@ -1,7 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable prettier/prettier */
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/jsx-fragments */
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -10,6 +8,7 @@ import Document, {
   Main,
   NextScript
 } from 'next/document';
+import React from 'react';
 
 import { ServerStyleSheet } from 'styled-components';
 
@@ -45,14 +44,13 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-          {/* <a href="https://www.flaticon.com/free-icons/launch" title="launch icons"></a>
-          <link rel="shortcut icon" href="/rocket.png" /> */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Montserrat:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
+
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>
