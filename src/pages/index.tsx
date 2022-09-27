@@ -42,6 +42,7 @@ export default function Home({ projetos }: HomeProps) {
     <HomeContainer>
       <Head>
         <title>Home | Meu Portfólio</title>
+        <link rel="icon" href="/start.png" />
         <meta property="og:image" content="/ogimage.png" />
         <meta property="og:image:secure_url" content="/ogimage.png" />
         <meta name="twitter:image" content="/ogimage.png" />
